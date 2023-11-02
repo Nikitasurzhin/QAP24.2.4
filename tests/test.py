@@ -1,5 +1,4 @@
 import pytest
-
 from app.calc import Calculator
 
 class TestCalculator:
@@ -7,7 +6,7 @@ class TestCalculator:
         self.calc = Calculator
 
     def test_adding_success(self):
-        assert self.calc.adding(self, 2, 2) == 2
+        assert self.calc.adding(self, 2, 2) == 4
 
     def test_subtraction(self):
         assert self.calc.subtraction(self, 20, 5) == 15
